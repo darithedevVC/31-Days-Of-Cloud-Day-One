@@ -4,7 +4,7 @@ Cloud professionals are expected to be familiar with several frameworks and tool
 
 # Day One
 
-On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned the basics of Terraform. 
+On day one of, I set up a cloud account on AWS and learned the basics of Terraform. 
 
 # What I did
 **Cloud Account Setup & Terraform Basics**
@@ -19,7 +19,12 @@ On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned t
 <br>**Bonus**: Learned some Markdown basics for the creation of this readme
 
 # Documentation: The Process
-As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[1] With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. I first created a new AWS account (https://aws.amazon.com)
+As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[1] With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. 
+<br>I first created a new AWS account (https://aws.amazon.com). After creating a new account, I googled Terraform and found a tutorial that helped me build my first AWS infrastructure (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build).
+<br>
+Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that allows you to manage cloud infrastructure with configuration files (Json or HCL). Terraform simplifies infrastructure management in any cloud environment and have the ability to create, change, and manage with version control across different environments and teams. 
+<br>
+Next, I downloaded the AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). On the Hashicorp website, I went through some of their developer docs and tutorials and found one for installing Terraform (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli). 
 
 
 # References
