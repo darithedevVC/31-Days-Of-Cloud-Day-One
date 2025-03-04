@@ -7,6 +7,7 @@ Cloud professionals are expected to be familiar with several frameworks and tool
 On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned the basics of Terraform. 
 
 # What I did
+**Cloud Account Setup & Terraform Basics**
 1. I created a free tier account on aws.amazon.com
 2. Downloaded and configured AWS CLI using the GUI installer
 3. Installed Terraform using Homebrew 
@@ -15,6 +16,7 @@ On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned t
 6. Oops no S3 bucket but theres an EC2 instance running???
 7. And then VICTORY! "terraform apply" finally worked! and I created a bucket :D
 8. Documentation of my process and experiences
-<br>**Bonus** Learned some Markdown basics for the creation of this readme
+<br>**Bonus**: Learned some Markdown basics for the creation of this readme
 
-# Documentation The Process
+# Documentation: The Process
+Creating 
