@@ -15,6 +15,6 @@ On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned t
 6. Oops no S3 bucket but theres an EC2 instance running???
 7. And then VICTORY! "terraform apply" finally worked! and I created a bucket :D
 8. Documentation of my process and experiences
-**Bonus** Learned some Markdown basics for the creation of this readme
+<br>**Bonus** Learned some Markdown basics for the creation of this readme
 
 # Documentation The Process
