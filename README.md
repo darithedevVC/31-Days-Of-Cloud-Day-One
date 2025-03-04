@@ -19,4 +19,8 @@ On day one of **31 Days of Cloud** I set up a cloud account on AWS and learned t
 <br>**Bonus**: Learned some Markdown basics for the creation of this readme
 
 # Documentation: The Process
-Creating 
+As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[1] With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. I first created a new AWS account (https://aws.amazon.com)
+
+
+# References
+1. https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.
