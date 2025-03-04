@@ -26,6 +26,15 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 <br><br>
 Next, I downloaded the AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). On the Hashicorp website, I went through some of their developer docs and tutorials and found one for installing Terraform (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli). 
 
+# What worked
+
+
+# What didn't work
+
+
+
+
+I found an interesting reddit post that explains when Terriform is needed (https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) 
 
 # References
 1. https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.
