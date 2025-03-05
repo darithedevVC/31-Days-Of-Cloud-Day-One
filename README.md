@@ -1,6 +1,6 @@
 # 31 Days of Cloud
 
-Cloud professionals are expected to be familiar with several frameworks and tools that are used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning something about cloud development. 
+Cloud professionals are expected to be familiar with several frameworks and tools that are used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning something new about cloud development and then create a tutorial teaching what I learned. 
 
 # Day One
 
@@ -26,10 +26,10 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 <br><br>
 Next, I downloaded the AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). On the Hashicorp website, I went through some of their developer docs and tutorials and found one for installing Terraform (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli). 
 
-# What worked
+# What Worked
 
 
-# What didn't work
+# What Didn't Work
 
 
 
