@@ -162,8 +162,10 @@ resource "aws_s3_bucket" "[name-bucket]" {
 ### Supplemental Resources
 
 - I found an interesting reddit post that explains [when Terriform](https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) is needed
+- Using ```.gitignore``` [file](https://docs.github.com/en/get-started/git-basics/ignoring-files) to ignore files you dont want uploaded to GitHub 
 - How to write a [good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
+Updated README.md, created main.tf and .gitignore
 # References
 
 1. https://developer.hashicorp.com/terraform/intro
