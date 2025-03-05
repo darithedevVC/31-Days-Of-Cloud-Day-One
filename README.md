@@ -18,8 +18,9 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 3. Installed [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) using Homebrew 
 4. Wrote my first [Terraform script](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
 5. but the script kept failing so I googled alot [[1]](https://developer.hashicorp.com/terraform/intro) [[2]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[3]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html) >:
-6. Oops no S3 bucket but theres an EC2 instance running???
-7. And then VICTORY! "terraform apply" [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created a bucket :D
+6. Oops no S3 container ("bucket") but theres an EC2 instance running???
+7. And then VICTORY! ```terraform apply``` [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created my first S3 bucket :D
+8. ```terraform destroy```
 8. Documentation of my process and experiences
 <br><br>**Bonus**: Learned some [Markdown basics](https://stackedit.io/app#) for the creation of this readme
 
@@ -27,12 +28,12 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 
 ### Getting Started
 
-If you want to test out this project or just follow along please follow the steps below: 
-<br>
-**NOTE** Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and AWS CLI and Terraform CLI installed withcthe latest version.
+If you want to test out this project or follow along please follow the steps below: 
+***NOTE*** Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and the latest version of AWS CLI and Terraform CLI installed.
 <br><br>
- - Clone or fork this project
- - Open with preferred IDE or text editor
+
+1. Clone or fork this project
+2. Open with preferred IDE or text editor
 
 ### Running this project
 
@@ -44,7 +45,7 @@ AWS Secret Access Key [None]: Secret_key
 Default region name [None]: Region
 Default output format [None]: Output (json or hcl)
 ```
-2. In your working directory create a directory for your configuration and the file to define your S3 bucket
+2. In the working directory create a directory for your configuration and file to define your S3 bucket
 
 ```
 mkdir test-terraform-aws-s3
@@ -55,7 +56,32 @@ cd test-terraform-aws-s3
 ```
 touch main.tf
 ```
+3. open ```main.tf``` in IDE or text editor and edit this configuration to your specifications:
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
 
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  region  = "[add-your-region]"
+}
+
+resource "aws_s3_bucket" "[name-bucket]" {
+  ami           = "[ami-that-matches-region]"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "[NameYourTags]"
+  }
+}
+```
 
 ### What Worked
 
