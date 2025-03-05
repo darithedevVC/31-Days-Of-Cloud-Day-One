@@ -162,7 +162,9 @@ resource "aws_s3_bucket" "[name-bucket]" {
 }
 ```
 
-### Supplemental Resources
+# Supplemental Resources
+
+I have attached some links for what I read that was interesting while I was searching for solutions for issues that came up during the configuration process. 
 
 - I found an interesting reddit post that explains [when Terriform](https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) is needed
 - Terraform [marketshare](https://6sense.com/tech/configuration-management/terraform-market-share) in configuration management
