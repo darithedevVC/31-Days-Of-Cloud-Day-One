@@ -134,7 +134,7 @@ To use this profile, specify the profile name using --profile, as shown:
 aws sts get-caller-identity --profile Profile Name
 ```
 To verify that your profile was successfully created run the ```aws sts get-caller-identity --profile``` command and include your profile name after ```--profile```
-<br>
+<br><br>
 To login as the same user use the ```aws sso login --profile``` command adding the profile name after ```--profile```
 - When successfully running the ```terraform apply``` command, I could not find the S3 container because I used the wrong [terraform resource syntax](https://developer.hashicorp.com/terraform/language/resources/syntax). Instead of creating a S3 container, I created a EC2 server.
 
