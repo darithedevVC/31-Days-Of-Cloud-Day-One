@@ -1,13 +1,9 @@
 # 31 Days of Cloud
 
 As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[[4]](https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.) 
-<br>
-Cloud professionals are expected to be familiar with several frameworks and tools that are used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning something new about cloud development. I encourage you to follow along with what I learned. With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. 
-
-# Day One
-
-I set up a cloud account on AWS and learned the basics of Terraform.
-<br>
+<br><br>
+Cloud professionals are expected to be familiar with several frameworks and tools that are used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning something new about cloud development.
+On day one, I set up a cloud account on AWS and learned the basics of Terraform. I encourage you to follow along with what I learned. With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. 
 
 ### What is Terraform?
 
