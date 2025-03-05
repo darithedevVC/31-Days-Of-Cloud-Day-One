@@ -164,6 +164,7 @@ To login as the same user use the ```aws sso login --profile``` command adding t
 ### Supplemental Resources
 
 - I found an interesting reddit post that explains [when Terriform](https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) is needed
+- What AWS EC2 is and if it's a good option for [hosting a website](https://stackoverflow.com/questions/919224/explain-what-amazon-ec2-is-and-can-i-use-it-as-a-web-hosting-service)
 - Using ```.gitignore``` [file](https://docs.github.com/en/get-started/git-basics/ignoring-files) to ignore files you dont want uploaded to GitHub 
 - How to write a [good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 - [Why correctly configuring your Virtual Private Cloud (VPC) is important](https://www.missioncloud.com/blog/is-your-aws-virtual-private-cloud-really-private)
