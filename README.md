@@ -4,7 +4,7 @@ Cloud professionals are expected to be familiar with several frameworks and tool
 
 # Day One
 
-On day one of, I set up a cloud account on AWS and learned the basics of Terraform. 
+Day one: I set up a cloud account on AWS and learned the basics of Terraform. 
 
 # What I did
 **Cloud Account Setup & Terraform Basics**
