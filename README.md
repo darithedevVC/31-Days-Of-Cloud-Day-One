@@ -28,7 +28,7 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 ### Getting Started
 
 If you want to test out this project or follow along please follow the steps below: 
-<br>***NOTE*** Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and the latest version of AWS CLI and Terraform CLI installed.
+<br>***NOTE***: Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and the latest version of AWS CLI and Terraform CLI installed.
 <br>
 
 1. Clone or fork this project
@@ -45,7 +45,7 @@ AWS Secret Access Key [None]: Secret_key
 Default region name [None]: Region
 Default output format [None]: Output (json or hcl)
 ```
-2. In the working directory create a directory for your configuration and file to define your S3 bucket
+2. In the working directory create a directory for your configuration and a file to define your S3 bucket
 
 ```
 mkdir test-terraform-aws-s3
@@ -76,9 +76,9 @@ provider "aws" {
   #profile = "[profile-name]"
 }
 
-resource "aws_s3_bucket" "[name-bucket]" {
+resource "aws_s3_bucket" "[name_bucket]" {
   # Make sure that the bucket name is unique 
-  bucket  = "name-bucket"
+  bucket  = "name_bucket"
   tags    = {
     Name          = "BucketTag"
 	Environment    = "Production"
@@ -134,6 +134,8 @@ To use this profile, specify the profile name using --profile, as shown:
 aws sts get-caller-identity --profile Profile Name
 ```
 To verify that your profile was successfully created run the ```aws sts get-caller-identity --profile``` command and include your profile name after ```--profile```
+<br>
+To login as the same user use the ```aws sso login --profile``` command adding the profile name after ```--profile```
 - When successfully running the ```terraform apply``` command, I could not find the S3 container because I used the wrong [terraform resource syntax](https://developer.hashicorp.com/terraform/language/resources/syntax). Instead of creating a S3 container, I created a EC2 server.
 
 What fixed this issue was change the resource block from "aws_instance_"
@@ -159,7 +161,6 @@ resource "aws_s3_bucket" "[name-bucket]" {
     }
 }
 ```
-To login as the same user use the ```aws sso login --profile``` command adding the profile name after ```--profile```
 
 ### Supplemental Resources
 
