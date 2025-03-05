@@ -19,7 +19,7 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 > 6. Oops no S3 bucket but theres an EC2 instance running???
 > 7. And then VICTORY! "terraform apply" finally worked! and I created a bucket :D
 > 8. Documentation of my process and experiences
-> <br>**Bonus**: Learned some Markdown basics for the creation of this readme
+<br><br>**Bonus**: Learned some Markdown basics for the creation of this readme
 
 # Documentation: The Process
 
