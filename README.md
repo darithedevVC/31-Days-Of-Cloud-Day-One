@@ -4,7 +4,9 @@ Cloud professionals are expected to be familiar with several frameworks and tool
 
 # Day One
 
-Day one: I set up a cloud account on AWS and learned the basics of Terraform. 
+I set up a cloud account on AWS and learned the basics of Terraform.
+<br><br>
+Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that allows you to manage cloud infrastructure with configuration files (Json or HCL). Terraform simplifies infrastructure management in any cloud environment and have the ability to create, change, and manage with version control across different environments and teams. 
 
 # What I did
 **Cloud Account Setup & Terraform Basics**
@@ -21,8 +23,6 @@ Day one: I set up a cloud account on AWS and learned the basics of Terraform.
 # Documentation: The Process
 As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[1] With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. 
 <br>I first created a new AWS account (https://aws.amazon.com). After creating a new account, I googled Terraform and found a tutorial that helped me build my first AWS infrastructure (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build).
-<br><br>
-Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that allows you to manage cloud infrastructure with configuration files (Json or HCL). Terraform simplifies infrastructure management in any cloud environment and have the ability to create, change, and manage with version control across different environments and teams. 
 <br><br>
 Next, I downloaded the AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). On the Hashicorp website, I went through some of their developer docs and tutorials and found one for installing Terraform (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli). 
 
