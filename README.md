@@ -33,7 +33,7 @@ Next, I downloaded the AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide
 
 
 
-
+# Supplemental Resources
 I found an interesting reddit post that explains when Terriform is needed (https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) 
 
 # References
