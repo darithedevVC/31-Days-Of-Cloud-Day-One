@@ -25,17 +25,23 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 
 # Documentation: The Process
 
+## What Worked
+The process of creating a new AWS account, creating a new IAM Identity Center user, and assiging it privilages was a straight forward process. I appreciated that the aws console had access to the tutorials which I could access at any time (or hide). 
+
+## What Didn't Work
+Confusing IAM and IAM Identity Center and not knowing the difference. I opened a ticket with AWS support because I was trying to sign in to: 
+
+```
+https://[account_ID_or_alias].signin.aws.amazon.com/console
+```
+instead of:
+```
+https://[managing_instance].awsapps.com/start 
+```
+I ended up resolving the issue after watching a youtube video explaining the difference. 
 
 
-
-# What Worked
-
-
-# What Didn't Work
-
-
-
-# Supplemental Resources
+## Supplemental Resources
 
 I found an interesting reddit post that explains when Terriform is needed (https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) 
 
