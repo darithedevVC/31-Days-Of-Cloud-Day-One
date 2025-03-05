@@ -5,10 +5,10 @@ Cloud professionals are expected to be familiar with several frameworks and tool
 # Day One
 
 I set up a cloud account on AWS and learned the basics of Terraform.
-<br><br>
+<br>
 
 As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[[4]](https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.) With AWS being the more familiar cloud platform out of the top three, I decided to start my "learning about cloud development" there. 
-<br><br>
+<br>
 
 Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that allows you to manage cloud infrastructure with configuration files (Json or HCL). Terraform simplifies infrastructure management in any cloud environment and have the ability to create, change, and manage with version control across different environments and teams. 
 
@@ -24,7 +24,7 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 6. Oops no S3 bucket but theres an EC2 instance running???
 7. And then VICTORY! "terraform apply" [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created a bucket :D
 8. Documentation of my process and experiences
-<br>**Bonus**: Learned some [Markdown basics](https://stackedit.io/app#) for the creation of this readme
+<br><br>**Bonus**: Learned some [Markdown basics](https://stackedit.io/app#) for the creation of this readme
 
 # Documentation: The Process
 
