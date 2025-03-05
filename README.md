@@ -56,7 +56,7 @@ cd test-terraform-aws-s3
 ```
 touch main.tf
 ```
-3. open ```main.tf``` in IDE or text editor and edit this configuration to your specifications:
+3. open ```main.tf``` file in IDE or text editor and edit this configuration to your specifications:
 ```
 terraform {
   required_providers {
@@ -82,6 +82,10 @@ resource "aws_s3_bucket" "[name-bucket]" {
   }
 }
 ```
+
+4. run ```terraform init``` to initialize the directory
+5. run ```terraform validate``` to validate the syntax of the configuration
+6. run ```terraform plan``` to generate an execution plan 
 
 ### What Worked
 
