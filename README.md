@@ -1,6 +1,6 @@
 # 31 Days of Cloud
 
-As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with Amazon's AWS as number one on that list.[[4]](https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.) 
+As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with AWS as number one on that list.[[4]](https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.) 
 <br><br>
 Cloud professionals are expected to be familiar with several frameworks and tools used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning about how to use cloud development in my projects, focusing on deploying, scaling, amd managing applications efficiently. On day one, I set up a cloud account on AWS and learned the basics of Terraform. I encourage you to follow along with what I learned. 
 
@@ -13,9 +13,9 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 **Cloud Account Setup & Terraform Basics**
 1. I created a new free tier [AWS account](https://aws.amazon.com).
 1. I also created an [IAM Identity Center User](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) (formerly SSO) and assigned it permission
-2. Downloaded and configured [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) using the GUI installer
-3. Installed [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) using Homebrew 
-4. Wrote my first [Terraform script](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
+2. I downloaded and configured [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) using the GUI installer
+3. I installed [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) using Homebrew 
+4. I wrote my first [Terraform script](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
 5. but the script kept failing so I googled alot [[1]](https://developer.hashicorp.com/terraform/intro) [[2]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[3]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html) >:
 6. Oops no S3 container ("bucket") but theres an EC2 instance running???
 7. And then VICTORY! ```terraform apply``` [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created my first S3 bucket :D
@@ -28,8 +28,8 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 ### Getting Started
 
 If you want to test out this project or follow along please follow the steps below: 
-***NOTE*** Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and the latest version of AWS CLI and Terraform CLI installed.
-<br><br>
+<br>***NOTE*** Before you can run this project make sure that you have an AWS account, IAM user with assigned privileges, and the latest version of AWS CLI and Terraform CLI installed.
+<br>
 
 1. Clone or fork this project
 2. Open with preferred IDE or text editor
@@ -39,6 +39,7 @@ If you want to test out this project or follow along please follow the steps bel
 1. run the ```aws configure``` command
 
 ```
+$ aws configure
 AWS Access Key ID [None]: Access_Key_ID
 AWS Secret Access Key [None]: Secret_key
 Default region name [None]: Region
