@@ -71,15 +71,16 @@ terraform {
 
 provider "aws" {
   region  = "[add-your-region]"
-  profile = "[profile-name"]
+
+  # Remove comment for profile name only if terraform apply fails due to invalid credentials
+  #profile = "[profile-name]"
 }
 
 resource "aws_s3_bucket" "[name-bucket]" {
-  ami           = "[ami-that-matches-region]"
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "[NameYourTags]"
+  bucket  = "name-bucket"
+  tags    = {
+    Name          = "BucketTag"
+	Environment    = "Production"
   }
 }
 ```
@@ -92,9 +93,8 @@ resource "aws_s3_bucket" "[name-bucket]" {
 
 ### What Worked
 
-The process of creating a new AWS account, creating a new IAM Identity Center user, and assiging it privilages was a straight forward process. I appreciated that the aws console had access to the tutorials which I could access at any time (or hide). 
-<br><br>
-
+- The process of creating a new AWS account, creating a new IAM Identity Center user, and assiging it privilages was a straight forward process. I appreciated that the aws console had access to the tutorials which I could access at any time (or hide). 
+- Running the ```terraform destroy``` command
 
 ### What Didn't Work
 
@@ -132,7 +132,32 @@ To use this profile, specify the profile name using --profile, as shown:
 
 aws sts get-caller-identity --profile Profile Name
 ```
-To verify that your profile was successfully created run the ```aws sts get-caller-identity --profile``` adding your profile name after ```--profile```
+To verify that your profile was successfully created run the ```aws sts get-caller-identity --profile``` command and include your profile name after ```--profile```
+- When successfully running the ```terraform apply``` command, I could not find the S3 container because I used the wrong [terraform resource syntax](https://developer.hashicorp.com/terraform/language/resources/syntax). Instead of creating a S3 container, I created a EC2 server.
+
+What fixed this issue was change the resource block from "aws_instance_"
+```
+# creates aws EC3 server
+resource "aws_instance" "app_server" {
+  ami           = "ami-0fc82f4dabc05670b"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "My_EC2_Server"
+  }
+}
+```
+to resource "aws_s3_bucket
+```
+# creates aws S3 container
+resource "aws_s3_bucket" "[name-bucket]" {
+  bucket  = "name-bucket"
+  tags    = {
+    Name          = "BucketTag"
+	Environment    = "Production"
+    }
+}
+```
 
 ### Supplemental Resources
 
