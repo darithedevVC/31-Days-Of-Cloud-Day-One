@@ -77,6 +77,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "[name-bucket]" {
+  # Make sure that the bucket name is unique 
   bucket  = "name-bucket"
   tags    = {
     Name          = "BucketTag"
@@ -158,6 +159,7 @@ resource "aws_s3_bucket" "[name-bucket]" {
     }
 }
 ```
+To login as the same user use the ```aws sso login --profile``` command adding the profile name after ```--profile```
 
 ### Supplemental Resources
 

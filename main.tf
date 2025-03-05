@@ -11,23 +11,24 @@ terraform {
 
 provider "aws" {
   region  = "us-east-2"
+  profile = "Dari"
 }
 
-resource "aws_s3_bucket" "my_first_bucket" {
-    bucket = "test_bucket"
+resource "aws_s3_bucket" "my-first-bucket" {
+    bucket = "test-bucket-s3-march"
     tags = {
         Name = "TestBucket"
         Environment = "Testing"
-
     }
 }
 
 # Bonus: Created an EC2 instance
-# resources "aws_instance" "test_server" {
-#    ami             = " ami-0fc82f4dabc05670b"
+#resource "aws_instance" "test_server" {
+#    ami             = "ami-0fc82f4dabc05670b"
 #    instance_type   = "t2.micro"
-#
+
 #    tags = {
 #        Name = "TestEC2Server"
+#        Environment = "Testing"
 #    }
 #}
