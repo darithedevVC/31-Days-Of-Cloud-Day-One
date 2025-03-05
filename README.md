@@ -107,11 +107,12 @@ instead of:
 ```
 https://[managing_instance].awsapps.com/start 
 ```
-I ended up resolving the issue after reading [aws support documents](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users) and after watching a youtube video explaining the difference between IAM and IAM Identity Center users. 
+I ended up resolving the issue after reading [aws support documents](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users) and watching a youtube video explaining the difference between IAM and IAM Identity Center users. 
 - error : **configuring Terraform AWS Provider: no valid credential sources for Terraform AWS Provider found.** when running ```terraform apply``` command
 
 What fixed it was running the ```aws configure sso``` command
 ```
+$ aws configure sso
 SSO session name (Recommended): IAM_Identity_Center_UserName
 SSO start URL [None]: https://[managing_instance].awsapps.com/start/#
 SSO region [None]: [region]
