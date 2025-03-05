@@ -71,6 +71,7 @@ terraform {
 
 provider "aws" {
   region  = "[add-your-region]"
+  profile = "[profile-name"]
 }
 
 resource "aws_s3_bucket" "[name-bucket]" {
@@ -82,10 +83,12 @@ resource "aws_s3_bucket" "[name-bucket]" {
   }
 }
 ```
-
-4. run ```terraform init``` to initialize the directory
-5. run ```terraform validate``` to validate the syntax of the configuration
-6. run ```terraform plan``` to generate an execution plan 
+4. run the ```terraform init``` command to initialize the directory
+5. run the ```terraform validate``` command to validate the syntax of the configuration
+6. run the ```terraform plan``` command to generate an execution plan
+7. run the ```terraform apply``` command to create the S3 container on AWS
+8. verify that the S3 bucket was created by going to the AWS Console S3 service page
+9. run the ```terraform destroy``` command to destroy the S3 bucket
 
 ### What Worked
 
@@ -95,7 +98,7 @@ The process of creating a new AWS account, creating a new IAM Identity Center us
 
 ### What Didn't Work
 
-Confusing IAM and IAM Identity Center and not knowing the difference. After assigning priviliges to the IAM Identity Center user I created, I was having trouble signing in the the aws console. I even opened a ticket with AWS support because I could not login to my new user account with ther correct user name and password. The issue was that I was trying to sign in to: 
+- Confusing IAM and IAM Identity Center and not knowing the difference. After assigning priviliges to the IAM Identity Center user I created, I was having trouble signing in the the aws console. I even opened a ticket with AWS support because I could not login to my new user account with ther correct user name and password. The issue was that I was trying to sign in to: 
 
 ```
 https://[account_ID_or_alias].signin.aws.amazon.com/console
@@ -105,11 +108,35 @@ instead of:
 https://[managing_instance].awsapps.com/start 
 ```
 I ended up resolving the issue after reading [aws support documents](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users) and after watching a youtube video explaining the difference between IAM and IAM Identity Center users. 
+- error : **configuring Terraform AWS Provider: no valid credential sources for Terraform AWS Provider found.** when running ```terraform apply``` command
 
+What fixed it was running the ```aws configure sso``` command
+```
+SSO session name (Recommended): IAM_Identity_Center_UserName
+SSO start URL [None]: https://[managing_instance].awsapps.com/start/#
+SSO region [None]: [region]
+SSO registration scopes [None]: sso:account:access
+Attempting to automatically open the SSO authorization page in your default browser.
+If the browser does not open or you wish to use a different device to authorize this request, open the following URL:
+
+
+The only AWS account available to you is:
+Using the account ID 
+The only role available to you is: 
+Using the role name ""
+Default client Region []: 
+CLI default output format (json if not specified) [None]: json
+Profile name []: Profile Name
+To use this profile, specify the profile name using --profile, as shown:
+
+aws sts get-caller-identity --profile Profile Name
+```
+To verify that your profile was successfully created run the ```aws sts get-caller-identity --profile``` adding your profile name after ```--profile```
 
 ### Supplemental Resources
 
-I found an interesting reddit post that explains when Terriform is needed (https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) 
+- I found an interesting reddit post that explains [when Terriform](https://www.reddit.com/r/Terraform/comments/17xcpvq/can_someone_help_me_explain_when_is_terraform/) is needed
+- How to write a [good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
 # References
 
