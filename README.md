@@ -53,9 +53,6 @@ mkdir test-terraform-aws-s3
 ```
 cd test-terraform-aws-s3
 ```
-```
-touch main.tf
-```
 3. open ```main.tf``` file in IDE or text editor and edit this configuration to your specifications:
 ```
 terraform {
