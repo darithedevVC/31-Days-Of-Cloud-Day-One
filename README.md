@@ -45,7 +45,7 @@ AWS Secret Access Key [None]: Secret_key
 Default region name [None]: Region
 Default output format [None]: Output (json or hcl)
 ```
-2. In the working directory create a directory for your configuration and a file to define your S3 bucket
+2. In the working directory create a directory for the configuration of the S3 bucket
 
 ```
 mkdir test-terraform-aws-s3
