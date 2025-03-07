@@ -135,7 +135,7 @@ To verify that your profile was successfully created run the ```aws sts get-call
 To login as the same user use the ```aws sso login --profile``` command adding the profile name after ```--profile```
 - When successfully running the ```terraform apply``` command, I could not find the S3 container because I used the wrong [terraform resource syntax](https://developer.hashicorp.com/terraform/language/resources/syntax). Instead of creating a S3 container, I created a EC2 server.
 
-What fixed this issue was change the resource block from "aws_instance_"
+What fixed this issue was change the resource block from ["aws_instance_"](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
 ```
 # creates aws EC3 server
 resource "aws_instance" "app_server" {
