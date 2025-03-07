@@ -16,7 +16,7 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 2. I downloaded and configured [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) using the GUI installer
 3. I installed [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) using Homebrew 
 4. I wrote my first [Terraform script](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
-5. but the script kept failing so I googled alot [[1]](https://developer.hashicorp.com/terraform/intro) [[2]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[3]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html) >:
+5. but the script kept failing so I googled alot [[2]](https://developer.hashicorp.com/terraform/intro) [[3]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[4]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html)[[5]](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code) >:
 6. Oops no S3 container ("bucket") but theres an EC2 instance running???
 7. And then VICTORY! ```terraform apply``` [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created my first S3 bucket :D
 8. ```terraform destroy```
@@ -172,7 +172,8 @@ I have attached some links for what I read that was interesting while I was sear
 
 # References
 
-1. https://developer.hashicorp.com/terraform/intro
-2. https://www.youtube.com/watch?v=-_XwzwMeqGY
-3. https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html
-4. https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.
+1. https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.
+2. https://developer.hashicorp.com/terraform/intro
+3. https://www.youtube.com/watch?v=-_XwzwMeqGY
+4. https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html 
+5. https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code
