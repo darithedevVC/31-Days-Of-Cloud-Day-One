@@ -15,8 +15,8 @@ Terraform is an infrastructre as code (IaC) tool developed by Hashicorp that all
 1. I also created an [IAM Identity Center User](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) (formerly SSO) and assigned it permission
 2. I downloaded and configured [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) using the GUI installer
 3. I installed [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) using Homebrew 
-4. I wrote my first [Terraform script](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
-5. but the script kept failing so I googled alot [[2]](https://developer.hashicorp.com/terraform/intro) [[3]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[4]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html)[[5]](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code) >:
+4. I wrote my first [Terraform configuration](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) !!!! :D
+5. but the configuration kept failing so I googled alot [[2]](https://developer.hashicorp.com/terraform/intro) [[3]](https://www.youtube.com/watch?v=-_XwzwMeqGY) [[4]](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html)[[5]](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code) >:
 6. Oops no S3 container ("bucket") but theres an EC2 instance running???
 7. And then VICTORY! ```terraform apply``` [finally worked!](https://kodekloud.com/blog/how-to-create-aws-s3-bucket-using-terraform/) and I created my first S3 bucket :D
 8. ```terraform destroy```
