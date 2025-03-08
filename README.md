@@ -2,7 +2,7 @@
 
 As of 2022, the top three cloud providers Amazon (AWS), Microsoft (Azure), and Google (GCP) accounted for 66% of cloud services revenue worldwide, with AWS as number one on that list.[[1]](https://techcrunch.com/2023/02/06/even-as-cloud-infrastructure-market-growth-slows-microsoft-continues-to-gain-on-amazon/#:~:text=The%20Big%20Three%20cloud%20providers,SaaS%2C%20which%20is%20measured%20separately.) 
 <br><br>
-Cloud professionals are expected to be familiar with several frameworks and tools used daily in cloud development. For the month of March, I am dedicating two hours everyday to learning about how to use cloud development in my projects, focusing on deploying, scaling, amd managing applications efficiently. On day one, I set up a cloud account on AWS and learned the basics of Terraform. I encourage you to follow along with what I learned. 
+Cloud professionals are expected to be familiar with several frameworks and tools used daily in cloud development. I am dedicating time to learning about how to use cloud development in my projects, focusing on deploying, scaling, amd managing applications efficiently. For this project, I set up a cloud account on AWS and learned the basics of Terraform. I encourage you to follow along with what I learned. 
 
 ### What is Terraform?
 
